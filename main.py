@@ -1,9 +1,24 @@
-nome = (input("Digite seu nome: "))
-print(f"Olá, {nome}! Bem-vindo ao nosso programa.")
-idade = int(input("Digite sua idade: "))
-if idade < 18:
-    print("Você é menor de idade.")
-else:
-    print("Você é maior de idade.")
-print("Obrigado por participar!")
-# Fim do programa
+continuar = "s"
+
+while continuar == "s":
+    num1 = float(input("Digite o primeiro numero: "))
+    num2 = float(input("Digite o segundo numero: "))
+    operacao = input("Digite a operação (+, -, *, /): ")
+    if operacao == "+":
+        resultado = num1 + num2
+        print(f"Resultado: {resultado}")
+    else:
+        if operacao == "-":
+            resultado = num1 - num2
+            print(f"Resultado: {resultado}")
+        else:
+            if operacao == "*":
+                resultado = num1 * num2
+                print(f"Resultado: {resultado}")
+            else:
+                if operacao =="/":
+                    if num2 != 0:
+                        resultado = num1 / num2
+                        print(f"Resultado: {resultado}")
+                    else:
+                        print("Não é possivel dividir por 0")
